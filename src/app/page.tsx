@@ -29,7 +29,7 @@ export default function Home() {
        
         <nav className="hidden sm:flex space-x-6 text-sm uppercase font-medium">
           <Link href="/about" className="hover:text-gray-300">about</Link>
-          <Link href="/featured" className="hover:text-gray-300">featured</Link>
+          <Link href="/featured" className="hover:text-gray-300">featured projects</Link>
           <Link href="/portfolio" className="hover:text-gray-300">portfolio</Link>
           <Link href="/blog" className="hover:text-gray-300">blog</Link>
           <Link href="/contact" className="hover:text-gray-300">contact</Link>
@@ -62,6 +62,7 @@ export default function Home() {
             {menuOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>
+        
       </header>
 
       
@@ -72,11 +73,11 @@ export default function Home() {
           transition={{ duration: 0.3 }}
           className="sm:hidden flex flex-col items-center bg-black dark:bg-gray-800 text-white text-sm uppercase font-medium py-4 space-y-4"
         >
-          <Link href="/about" onClick={toggleMenu}>about</Link>
-          <Link href="/featured" onClick={toggleMenu}>featured</Link>
-          <Link href="/portfolio" onClick={toggleMenu}>portfolio</Link>
-          <Link href="/blog" onClick={toggleMenu}>blog</Link>
-          <Link href="/contact" onClick={toggleMenu}>contact</Link>
+          <Link href="/about" onClick={toggleMenu}>About</Link>
+          <Link href="/featured" onClick={toggleMenu}>Featured Projects</Link>
+          <Link href="/portfolio" onClick={toggleMenu}>Portfolio</Link>
+          <Link href="/blog" onClick={toggleMenu}>Blog</Link>
+          <Link href="/contact" onClick={toggleMenu}>Contact</Link>
         </motion.nav>
       )}
 
@@ -88,25 +89,25 @@ export default function Home() {
         className="flex flex-col lg:flex-row bg-[url('/banner2.jpg')] bg-cover bg-center items-center justify-center px-4 sm:px-6 md:px-8 py-10 sm:py-16 gap-8 text-center lg:text-left min-h-[600px]"
       >
         <div className="flex-1 text-center">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold transition-transform duration-500 hover:scale-105">Designer</h1>
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold transition-transform duration-500 hover:scale-115 hover:text-blue-500">Designer</h1>
           <p className="mt-2 sm:mt-4 text-gray-600 dark:text-gray-300 max-w-sm mx-auto lg:mx-0 text-xs sm:text-base">
             UI/UX Designer with a passion for designing beautiful and functional user experiences.
           </p>
         </div>
 
-        <div className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 transform hover:scale-105 transition duration-500">
+        <div className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 transform hover:scale-120 transition duration-500">
           <Image
             src="/Cover.jpg"
             alt="Profile Picture"
             width={256}
             height={256}
             unoptimized
-            className="rounded-full border-4 border-black object-cover"
+            className="rounded-full border-4 border-black hover:border-blue-500 object-cover"
           />
         </div>
 
         <div className="flex-1 text-center">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold transition-transform duration-500 hover:scale-105">&lt;Coder&gt;</h1>
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold transition-transform duration-500 hover:scale-115">&lt;Coder&gt;</h1>
           <p className="mt-2 sm:mt-4 text-gray-600 dark:text-gray-300 max-w-sm mx-auto lg:ml-auto text-xs sm:text-base">
             Full Stack Developer who focuses on writing clean, elegant and efficient code.
           </p>
