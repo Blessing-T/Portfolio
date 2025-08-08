@@ -158,7 +158,7 @@ export default function Home() {
         />
         <textarea
           placeholder="Your Message"
-          rows="3"
+          rows={3}
           className="p-2 rounded bg-gray-800 text-white focus:outline-none"
         ></textarea>
          <button
